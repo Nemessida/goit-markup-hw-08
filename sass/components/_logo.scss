@@ -24,8 +24,8 @@
     }
 
     &--footer {
-        padding: 10px;
         color: $current-light-color;
+        margin-bottom: 10px;
 
         @media screen and(min-width:1200px) {
             padding: 10px 0;

@@ -12,9 +12,8 @@
 
     transition: box-shadow $duration $function;
 
-    @media screen and(max-width:767px) {
-        :not(:last-child) {
-            margin-top: 30px;
+    @media screen and(max-width:767px) {:not(:first-child) {
+        margin-top: 30px;
         }
     }
 

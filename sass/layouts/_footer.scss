@@ -8,7 +8,6 @@
 .footer__address {
     display: block;
     padding: 0;
-    padding: 10px;
 
     color: $current-light-color;
 
@@ -23,7 +22,7 @@
 
 .footer__link {
     display: block;
-    padding: 4px;
+    margin-bottom: 8px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -43,8 +42,7 @@
 }
 
 .footer__thumb {
-    margin-bottom: 60px;
-
+    
     @media screen and(min-width:768px) {
         margin-bottom: 0;
         margin-right: 70px;
@@ -68,6 +66,7 @@
 }
 
 .footer-tablet {
+
     @media screen and(min-width:768px) {
         display: flex;
         justify-content: space-around;
