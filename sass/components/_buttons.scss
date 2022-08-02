@@ -10,26 +10,35 @@
     background-color: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
+    color: $current-dark-color;
     outline: none;
+    transition: color $duration $function;
 }
 
 .button__menu-open {
     @extend %button__menu;
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
 
     @media screen and (min-width: 768px) {
-        display: none;
+    display: none;
     }
-}
+}  
 
 .button__menu-close {
     @extend %button__menu;
+    border-radius: 50%;
     position: absolute;
     top: 10px;
     right: 15px;
-
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
     @media screen and (min-width: 768px) {
-        display: none;
+    display: none;
     }
 }
 
@@ -77,7 +86,7 @@
 
     &:hover,
     &:focus {
-        background-color: $minor-accent-color;
+    background-color: $minor-accent-color;
     }
 }
 
@@ -93,11 +102,11 @@
 
     &:hover,
     &:focus {
-        background-color: $minor-accent-color;
+    background-color: $minor-accent-color;
     }
 
     @media screen and (min-width: 1200px) {
-        align-self: flex-end;
+    align-self: flex-end;
     }
 }
 
@@ -124,7 +133,7 @@
 
     &:focus,
     &:hover {
-        color: $accent-color;
+    color: $accent-color;
     }
 }
 
@@ -134,8 +143,9 @@
     &:hover,
     &:focus,
     &.is-active {
-        color: $current-light-color;
-        background-color: $accent-color;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $current-light-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }
