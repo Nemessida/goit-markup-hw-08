@@ -9,8 +9,8 @@
 }
 
 .social__menu-item {
-    &:not(:last-child)::after {
-        content: '';
+    & + &::before {
+    content: '';
 
         border-right: 1px solid $line-social-color;
     }
