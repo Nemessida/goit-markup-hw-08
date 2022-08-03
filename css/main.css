@@ -544,6 +544,7 @@
   .about__heading, .clients__heading, .team__heading {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -1020,7 +1021,7 @@ body {
     height: 609px;
   }
 }
-@media screen and (min-width: 1200x) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
@@ -1053,7 +1054,6 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
 
 @media screen and (min-width: 768px) {
@@ -1552,6 +1552,7 @@ input:-webkit-autofill:active {
   margin: 0;
   background-color: rgba(47, 48, 58, 0.8);
   color: #ffffff;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
