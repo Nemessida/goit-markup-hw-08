@@ -8,6 +8,17 @@
   list-style: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-indent {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-indent {
+    margin-top: 80px;
+  }
+}
+
 .hidden {
   position: absolute;
   width: 1px;
